@@ -7,7 +7,6 @@ public class Gymnasium {
 	//Generic list of type User
 	static List<User> users = new ArrayList<>();
 	public static void main(String[] args) {
-
 		createUsers();
 	}
 	private static void createUsers() {

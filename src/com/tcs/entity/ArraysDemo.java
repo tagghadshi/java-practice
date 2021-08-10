@@ -22,8 +22,8 @@ public class ArraysDemo {
 		numbers[0] = 5;
 		numbers[4] = 2;
 		Arrays.sort(numbers, 0, numbers.length);
-		for (int i = 0; i < numbers.length; i++) {
-			System.out.println(numbers[i]);
+		for (int counter = 0; counter < numbers.length; counter++) {
+			System.out.println(numbers[counter]);
 		}
 	}
 }

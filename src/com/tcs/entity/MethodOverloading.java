@@ -26,6 +26,7 @@ class User1 {
 class Employee1 extends User1 {// IS-A Relationship = inheritance ,sub-class
 	@Override
 	public void work() {
+		super.work();
 		System.out.println("Employee is Working");
 	}
 

@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class ArraysDemo {
 	public static void main(String[] args) {
 		EnchanceForLoop();
-		//demo();
+		// demo();
 	}
 
 	public static void EnchanceForLoop() {

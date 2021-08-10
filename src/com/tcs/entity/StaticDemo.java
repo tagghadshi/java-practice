@@ -6,7 +6,7 @@ public class StaticDemo {
 		System.out.println(Bank.createNewAccounts());
 		System.out.println(Bank.createNewAccounts());
 		System.out.println(bank.instanceVariable);
-		
+
 		Bank bank1 = new Bank();
 		System.out.println(bank1.createNewAccounts());
 		System.out.println(bank1.createNewAccounts());
@@ -16,8 +16,9 @@ public class StaticDemo {
 
 class Bank {
 	static int counter;
-	int instanceVariable =10; //instanceVariable
-	public static int createNewAccounts(){
+	int instanceVariable = 10; // instanceVariable
+
+	public static int createNewAccounts() {
 		return ++counter;
 	}
 }

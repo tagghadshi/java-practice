@@ -5,18 +5,19 @@ public class User {
 	private long mobileNumber;
 	private ROLE role;
 	private byte age; // data encapsulation declaring private
-	
+
 	public User(String name, long mobileNumber, byte age) {
-		this(name,mobileNumber);
+		this(name, mobileNumber);
 		this.age = age;
 	}
-	//constructor
+
+	// constructor
 	public User(String name, long mobileNumber) {
-		super();//call super class constructor
+		super();// call super class constructor
 		this.name = name;
 		this.mobileNumber = mobileNumber;
 	}
-	
+
 	public void workout() {
 		System.out.println(name + " is working out...");
 	}
@@ -50,5 +51,4 @@ public class User {
 		return "User [name=" + name + ", mobileNumber=" + mobileNumber + ", age=" + age + "]";
 	}
 
-	
 }

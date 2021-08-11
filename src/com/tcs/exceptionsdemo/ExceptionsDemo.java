@@ -2,12 +2,11 @@ package com.tcs.exceptionsdemo;
 
 public class ExceptionsDemo {
 	public static void main(String[] args) {
-		
+
 //		demo1();
 		try {
 			demo2();
 		} catch (MyCheckedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -15,11 +14,11 @@ public class ExceptionsDemo {
 	private static void demo2() throws MyCheckedException {
 		throw new MyCheckedException();
 	}
-	
+
 	private static void demo1() {
-		//Handling Exception
+		// Handling Exception
 		try {
-			System.out.println(1/0);
+			System.out.println(1 / 0);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

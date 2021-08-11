@@ -1,10 +1,15 @@
 package com.tcs.exceptionsdemo;
 
 public class ExceptionsDemo {
-	public static void main(String[] args) throws MyCheckedException {
+	public static void main(String[] args) {
 		
 //		demo1();
-		demo2();
+		try {
+			demo2();
+		} catch (MyCheckedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	private static void demo2() throws MyCheckedException {

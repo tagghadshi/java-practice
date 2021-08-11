@@ -4,14 +4,19 @@ public class ExceptionsDemo {
 	public static void main(String[] args) {
 
 //		demo1();
-		try {
-			demo2();
-		} catch (MyCheckedException e) {
-			e.printStackTrace();
-		}
+			try {
+				demo2();
+			} catch (InvalidInputException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (MyCheckedException e) {
+				e.printStackTrace();
+			}finally {
+				System.out.println("always called");
+			}
 	}
 
-	private static void demo2() throws MyCheckedException {
+	private static void demo2() throws MyCheckedException ,InvalidInputException {
 		throw new MyCheckedException();
 	}
 

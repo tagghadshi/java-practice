@@ -41,11 +41,11 @@ public class ArraylistDemo {
 	 * @param numbers
 	 */
 	private static void filterList(List<Integer> numbers) { // Functional Programming
-		numbers.forEach((number) -> {
+		numbers.forEach(number -> {
 			System.out.println(number % 2 == 0);
 		});
 		List<Integer> filtered = numbers.stream() // send elements one by one
-				.filter((number) -> number % 2 == 0) // Lambda Function
+				.filter(number -> number % 2 == 0) // Lambda Function
 				.collect(Collectors.toList());
 		System.out.println(filtered);
 	}

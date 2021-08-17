@@ -8,7 +8,7 @@ public class Purple {
 	public static void main(String args[]) {
 	    int a,b,c,d,f,g,x;
 	    a = b = c = d = f = g = 0;
-	    x = 3;
+	    x = 1;
 	    try {
 	      try {
 	        switch (x) {

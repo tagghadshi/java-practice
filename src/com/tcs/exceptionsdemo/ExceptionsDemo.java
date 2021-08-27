@@ -7,7 +7,6 @@ public class ExceptionsDemo {
 			try {
 				demo2();
 			} catch (InvalidInputException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			} catch (MyCheckedException e) {
 				e.printStackTrace();
@@ -25,7 +24,6 @@ public class ExceptionsDemo {
 		try {
 			System.out.println(1 / 0);
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 			System.out.println("Division by zero is not Allowed");
 		}
